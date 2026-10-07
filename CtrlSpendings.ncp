@@ -1,0 +1,42 @@
+<Project>
+  <Name>Spendings Control</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>diagrama de clases</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Spending</Name>
+        <Access>Public</Access>
+        <Location left="212" top="227" />
+        <Size width="162" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public DateTime Date { get; }</Member>
+        <Member type="Property">public string Concept { get; }</Member>
+        <Member type="Property">public double Amount { get; }</Member>
+        <Member type="Method">public override string ToString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SpendingRegistry</Name>
+        <Access>Public</Access>
+        <Location left="669" top="224" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public IEnumerable&lt;Spending&gt; Todos { get; }</Member>
+        <Member type="Method">public void Add(Spending g)</Member>
+        <Member type="Method">public override string ToString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
